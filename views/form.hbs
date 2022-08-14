@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/form.css">
+    <title>{{title}}</title>
+</head>
+<body>
+    <div class="flex-container">
+        <h1>Go Solo</h1>
+    </div>
+
+    <marquee> · Japan ·  Scotland · Italy · France · Spain · Greece · New Zealand · Australia · Portugal · Brazil · Ireland · Thailand · Mexico · Switzerland · Netherlands · Canada · Austria · Norway · Finland · Sweden · France · Malaysia · Indonesia ·</marquee>
+
+    <div class="center">
+    <form method="POST" action="/new">
+        <input type="text" id="tripName" name="tripName" placeholder="Trip Name" required>
+
+        <input type="text" id="country" name="country" placeholder="Country e.g. United Kingdom (Please enter a valid country name)" required>
+        <input type="text" id="city" name="city" placeholder="City" required>
+
+        <input type="text" id="hotelName" name="hotelName" placeholder="Hotel Name" required>
+        <input type="number" id="hotelPrice" name="hotelPrice" placeholder="Hotel Price/night" min="1" max="10000" required>
+        <input type="number" id="nights" name="nights" placeholder="Nights" min="1" max="100" required>
+
+        <input type="number" id="food" name="food" placeholder="Food budget/day" min="1" max="10000" required>
+        <input type="number" id="spending" name="spending" placeholder="Spending Money/day" min="1" max="100000" required>
+        <input type="number" id="emergency" name="emergency" placeholder="Emergency Money" min="1" max="100000" required>
+        <input type="number" id="travel" name="travel" placeholder="Travel Cost" min="1" max="1000000" required>
+
+        <input type="text" id="notes" name="notes" placeholder="Notes e.g. Check in at 12pm" required>
+
+        <input type="submit" value="Complete">
+
+    </form>
+    </div>
+</body>
+</html>

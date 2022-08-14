@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascripts/script.js"></script>
+    <link rel="stylesheet" href="stylesheets/dashboard.css">
+    <title>{{title}}</title>
+</head>
+<body>
+    <div>
+        <h1>Go Solo</h1>
+    </div>
+
+    <marquee> · Japan ·  Scotland · Italy · France · Spain · Greece · New Zealand · Australia · Portugal · Brazil · Ireland · Thailand · Mexico · Switzerland · Netherlands · Canada · Austria · Norway · Finland · Sweden · France · Malaysia · Indonesia ·</marquee>
+
+    <div class="white-container">
+        <img src="images/storage-solid.svg">
+        <p>{{storageMessage}}</p>
+    </div>
+
+    <div id="tripSpace">
+        <h1>Your Trip summary</h1>
+        <br>
+        <p>Open a trip to see summary</p>
+        <br>
+        <p id="destination">Destination: </p>
+        <p id="Nights">Total Cost: </p>
+        <p id="totalCost">Total Cost: </p>
+        <p id="notes">Notes: </p>
+    </div>
+
+    <div class="trips">
+        <div id="newTrip" class="trip">
+            <a href="/new">
+                <img src="images/plus.svg" alt="Add new trip">
+            </a
+            <p>Add new trip</p>
+        </div>
+
+        {{#each trips}}
+            <div class="trip">
+                <p>{{name}}</p>
+                <button>Open</button>
+            </div>
+        {{/each}}
+    </div>
+</body>
+</html>

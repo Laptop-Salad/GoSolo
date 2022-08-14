@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #A0AECD;
+    font-family: 'Righteous', cursive;
+}
+
+#newTrip {
+    font-size: 16px;
+}
+
+#tripSpace {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #D9D9D9;
+    width: 90vw;
+    height: 20vh;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.white-container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #f5f5f5;
+    width: 90vw;
+    height: 25vh;
+    margin: 1%;
+    padding: 0.5%;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.white-container > img{
+    width: 15%;
+}
+
+.white-container > p {
+    position: relative;
+    font-size: 32px;
+    margin-left: 25%;
+}
+
+.trips {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.trip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 32px;
+    height: 200px;
+}
+
+.trip > button {
+    background-color: #C2C2C2;
+    border-radius: 10px;
+    border: none;
+    width: 30%;
+    height: 20%;
+    margin-top: 20px;
+    font-family: 'Righteous', cursive;
+}

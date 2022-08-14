@@ -21,13 +21,7 @@ router.post('/new', function(req, res, next) {
 
   // Add new trip name
   let trips = JSON.parse(localstorage.getItem('trips'));
-
-  if (trips == null) {
-    trips = tripNameArr;
-  } else {
-    trips.push(tripNameArr);
-  }
-
+  trips.push(tripNameArr);
   localstorage.setItem('trips', JSON.stringify(trips));
 
   // Add other fields

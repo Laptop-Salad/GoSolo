@@ -1,6 +1,6 @@
 {
   "name": "gosolo",
-  "version": "0.0.0",
+  "version": "16.15.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
